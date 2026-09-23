@@ -31,6 +31,36 @@ uneven visual weight looks wrong. Correct against the render, not the number.
 
 ---
 
+## Golden Ratio & Spiral
+
+Use φ (≈ 1.618) as an optional but preferred proportion system when the brief
+allows it. It is a tool for hierarchy and natural eye flow, not a rigid law.
+
+- Define the token once: `--phi: 1.618;` and `--phi-inverse: 0.618;`.
+- Prefer column ratios of `1fr / 0.618fr` or `61.8% / 38.2%` for main + sidebar
+  layouts. Avoid forcing every grid into φ; only where it improves balance.
+- Typography can optionally step by φ (base → ×φ → ×φ²). Keep the existing
+  tracking and measure rules; do not replace the type ramp entirely.
+- Large spacing jumps may multiply by φ while keeping the 4px base for fine steps.
+- Cards, hero media and key images may use `aspect-ratio: 1.618 / 1` when it
+  serves the composition.
+
+**Golden Spiral alignment (composition, not decoration)**
+
+- Place the single most important element (headline + primary CTA, or the focal
+  product/face) near the spiral centre of the hero or key act.
+- Secondary elements follow the next turn of the spiral; tertiary content sits
+  further out.
+- Do not draw a visible spiral or overlay a Fibonacci diagram on the live page.
+  The spiral is a planning and placement guide only.
+- On mobile the spiral collapses; prioritise vertical order and keep the focal
+  point high in the viewport.
+
+Never let φ override optical correction, contrast, or the refuse list. If a
+φ-based layout fails the squint test, abandon it.
+
+---
+
 ## Typography
 
 - **Two families maximum.** Display carries voice, text carries prose. A third
@@ -270,7 +300,7 @@ them; reaching for one when the axis is free means you were not deciding.
   is information the reader needs.
 - Scroll cues: "scroll", "↓ scroll", "scroll to explore", animated mouse icons.
   They are looking at the hero. They know.
-- Decoration text strips (`BRAND. MOTION. SPATIAL.`) across the hero bottom.
+- Decorations text strips (`BRAND. MOTION. SPATIAL.`) across the hero bottom.
 - Locale, time and weather strips unless the brand is genuinely about a place.
 - Pills and tags overlaid on photos. Version stamps on a marketing page.
 
